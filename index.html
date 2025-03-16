@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head><title> Final Portfolio </title> <style>
+.fadingcells {
+  background-color:#0D0D0D;
+  transition: background-color 1s;
+}
+.cell {
+  color: pink;
+  transition: color 0.5s;
+}
+.fadingcells:hover {
+  background-color:pink;
+}
+.fadingcells:hover .cell {
+  color:pink;
+        body {
+            height: 100vh;
+            margin: 0;
+            transition: background-image 0.5s ease;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        #label {
+            font-size: 24px;   
+            color: pink;
+        }
+    </style> </head>
+<body style="background-image: url('BlueSkies.jpg'); background-size: cover; background-position: center;">
+    <form id="nameForm">
+        <label for="nameInput"> <span id="highlightLabel">HIIIIIIIIII What's your name?</span> :</label>
+        <input type="text" id="nameInput" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="greeting"></p>
+
+    <script>
+        
+        const form = document.getElementById('nameForm');
+        const nameInput = document.getElementById('nameInput');
+        const greeting = document.getElementById('greeting');
+
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = nameInput.value; 
+            if (name) {
+               const div = document.createElement('div');
+               div.textContent = `Oh, Hi ${name}!`;
+               greeting.style.color = 'black';
+               greeting.style.backgroundColor = 'pink'; 
+               greeting.innerHTML = '';
+               greeting.appendChild(div);
+            }
+        });
+    </script>
+
+<br> <div id="text">Hi, you already know who I am, and whoever's reading this, our journey has been long :) <br> <br> My reflection for 4th Quarter: As hard as Grade 9 was, I find solace in the fact that it was probably the most enjoyable, but also controversial year so far. With so many debates, new and broken friendships, I think that the peace that my portfolio will give can give you some comfort. Making portfolios are going to be memorable until when I'm older and are going to hate doing them. Just kidding.
+
+
+</div>
+
+<style>
+        #text {
+            font-size: 20px;
+            font-family: 'Courier New', monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: wave 1s infinite
+            color: pink;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+         
+            }
+        }
+    </style>
+</head>
+BACKGROUNDSSS
+--------------
+<body>
+
+<div id="text"></div>
+
+<script>
+ 
+    const text = "Hi, you already know who I am, and whoever's reading this, our journey has been long :) <br> <br> My reflection for 4th Quarter: As hard as Grade 9 was, I find solace in the fact that it was probably the most enjoyable, but also controversial year so far. With so many debates, new and broken friendships, I think that the peace that my portfolio will give can give you some comfort. Making portfolios are going to be memorable until when I'm older and are going to hate doing them. Just kidding.";
+    
+
+    let index = 0;
+    const speed = 100; 
+    const colors = ['#ff6347', '#32cd32', '#1e90ff', '#ff4500', '#dda0dd'];
+    let colorIndex = 0;
+    const element = document.getElementById('text');
+    
+        function typeWriter() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+       function cycleColor() {
+        element.style.color = colors[colorIndex];
+        colorIndex = (colorIndex + 1) % colors.length;
+    }
+
+        typeWriter();
+
+
+    setInterval(cycleColor, 1000); </script>
+
+<button onclick="changeBackground('Chamber.png')">1st Quarter</button>
+    <button onclick="changeBackground('HAIKYUU.jpg')">2nd Quarter</button>
+    <button onclick="changeBackground('serenade.jpg')">3rd and 4th</button>
+    <button onclick="changeBackground('BlueSkies.jpg')">Original</button>
+
+     <button onclick="changeBackground('.jpg')">Reset</button>
+
+ <script>
+        function changeBackground(image) {
+            document.body.style.backgroundImage = 'url(' + image + ')';
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+             document.body.style.backgroundRepeat = 'no-repeat';
+        }
+    </script>
+
+
+ <audio controls autoplay loop>
+        <source src="Sakso.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+
+
+	
+<hr color="black">
+<table width="95%" border="1" bordercolor="pink" cellspacing="0" align="center" cellpadding="1">
+
+
+<h1 align="Center"> <font class="FONT"> <i> Choose Your Team </i> </font> </h1> 
+</td>
+
+</tr>
+<tr height="30">
+<td align="center" width="10%" colspan="2" class="fadingcells">
+
+<a href="#" target="_self" name="Home" class="cell"> <font class="FONTFADING"> <b> (Home) </b> </font> </a> </td>
+
+
+<td align="center" width="10%" colspan="2" class="fadingcells">
+<a href="Villarta_hyperlink1.html" target="_self" name="About Me" class="cell"> <font class="FONTFADING"> <b> (Activities) </b> </font> </a>
+</td> 
+
+
+<td align="center" width="10%" class="fadingcells">
+
+<a href="BO.html" target="_self" name="To be shown" class="cell"> 
+<font class="FONTFADING"> <b> (Lessons) </b> </font></a><font size="4" face="Arial" color="pink"> <span class="activities"> <b> </td> 
+
+<table>
+<br>
+<br>
+<br> 
+<hr color="black"> <table border="2" bgcolor="black" width="20%" bordercolor="pink"> <tr> <td> <font color="pink">
+<h2> Grade 9 Formula Card</h2>
+              <p> Fill out the forms below to tell us about how our website served you!</p> </td> </tr>
+<form>
+<tr> <td> <font color="pink">
+<h1> Name <input type="text" placeholder="First name*" required="">
+<input type="text" class="form-control appointment-form-input" placeholder="Last name*" required="">
+<h1> Date <input type="date" required=""> <br>
+<h1> Gender <select name="gender"
+<option value="choose-class">Choose Class</option>
+<option value="class-1">Male</option>
+<option value="class-2">Female</option>
+<option value="class-3">Other</option>
+                      </select>
+<h1> What is your phone number? <input type="tel" value="" size="10" maxlength="10">
+<h1> What's your email address? <input type="email" placeholder="Email" required=""> <br>
+<h1> Give us a message! <textarea rows="3" cols="200" placeholder="Message (Optional)"></textarea> <br>
+<button type="submit"> Submit by pressing this button. </button> </form>
+</body>
+</html>
